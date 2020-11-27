@@ -16,7 +16,6 @@ function List() {
                                 <span className="wrork_a clearfix">
                                     <em className="work_a">111</em>
                                     <em className='work_a'>16</em>
-                                    
                                 </span>
                             </span>
                         </a>

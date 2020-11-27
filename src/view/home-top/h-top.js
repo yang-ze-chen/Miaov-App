@@ -8,7 +8,7 @@ function Htop(props) {
         <Fragment>
             <header id="header">
                 <nav className='menu'>
-                    <a className="menu-a icon-size" onClick={()=>{
+                    <a className="menu-a icon-size" onTouchEnd={()=>{
                         setTxt(!txt)
                     }}></a>
                 </nav>
