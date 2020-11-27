@@ -1,6 +1,7 @@
 (function (win) {
         var docEl = win.document.documentElement;
         var time;
+
         function refreshRem() {
                 var width = docEl.getBoundingClientRect().width;
                 if (width > 768) { // 最大宽度
@@ -9,7 +10,6 @@
                 var rem = width / 375 * 50;
                 docEl.style.fontSize = rem + 'px';
                 ///rem用font-size:50px来进行换算
-
         }
 
         win.addEventListener('resize', function () {
