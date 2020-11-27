@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react"
+import React, { Fragment} from "react"
 import './h-top.css'
 function Htop(props) {
     console.log(props)
@@ -14,9 +14,8 @@ function Htop(props) {
                 </nav>
                 <h1 className="logo">miaov.com</h1>
                 <a className="user"></a>
-
             </header>
-            <nav className={"menus "+(txt?"unshow":"show") }>
+            <nav className="menus">
                 <a className="iconfont icon-home active">首页</a>
                 <a className="iconfont icon-kecheng">课程安排</a>
                 <a className="iconfont icon-peixunjiangshi">讲师团队</a>

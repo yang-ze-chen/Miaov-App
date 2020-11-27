@@ -60,26 +60,26 @@
 .menus {
     box-sizing: border-box;
     position: fixed;
-    left: -3rem;
+    left: 0;
     top: 0;
     padding: 1.2rem .5rem;
     width: 3.5rem;
     height: 100vh;
     background: url("../../assets/images//menu.png") no-repeat;
     background-size: cover;
-    z-index: 6;
+    z-index: 1;
     /* transition: .5s transform; */
 }
-.show{
+/* .show{ */
     /* display: block; */
-    transform: translateX(3rem);
-    transition: .5s transform;
-}
-.unshow{
+    /* transform: translateX(3rem); */
+    /* transition: .5s transform; */
+/* } */
+/* .unshow{ */
     /* display: none; */
-    transform: translateX(-3rem);
-    transition: .5s transform;
-}
+    /* transform: translateX(-3rem); */
+    /* transition: .5s transform; */
+/* } */
 
 .menus a {
     display: block;
