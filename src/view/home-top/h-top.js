@@ -1,9 +1,12 @@
-import React, { Fragment} from "react"
+import React, {Fragment} from "react"
 import './h-top.css'
+import {NavLink} from 'react-router-dom'
 function Htop(props) {
-    console.log(props)
+    // console.log(props)
     let {txt,setTxt}=props
-    console.log(txt,setTxt)
+    // console.log(txt,setTxt)
+    // let [txt, setTxt] = useState(true)
+
     return (
         <Fragment>
             <header id="header">
@@ -13,13 +16,14 @@ function Htop(props) {
                     }}></a>
                 </nav>
                 <h1 className="logo">miaov.com</h1>
-                <a className="user"></a>
+                <NavLink to='/login' className="user"></NavLink>
             </header>
-            <nav className="menus">
+            {!txt?(<nav className="menus">
                 <a className="iconfont icon-home active">首页</a>
                 <a className="iconfont icon-kecheng">课程安排</a>
                 <a className="iconfont icon-peixunjiangshi">讲师团队</a>
-            </nav>
+            </nav>):""}
+            
         </Fragment>
     )
 }
