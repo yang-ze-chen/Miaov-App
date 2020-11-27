@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from "react"
 import "../../assets/css/reset.css"
-import "../../assets/css/common.css"
 import "./index.css"
 import ReactSwiper from 'reactjs-swiper';
 import Htop from "../home-top/h-top"
