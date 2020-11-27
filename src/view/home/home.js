@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react"
 import "../../assets/css/reset.css"
-import "./common.css"
+import "../../assets/css/common.css"
 import "./index.css"
 import ReactSwiper from 'reactjs-swiper';
 import Htop from "../home-top/h-top"
@@ -10,7 +10,6 @@ import Img3 from '../../assets/images/banner3.jpg'
 import Img4 from '../../assets/images/banner4.jpg'
 import Content from "../content/content"
 import List from "../list/list"
-import '../../component/win-SP'
 function Home() {
   const items = [{
     image: Img,
