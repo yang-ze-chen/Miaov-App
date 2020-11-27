@@ -1,13 +1,14 @@
+
 import React from 'react'
 import Class from './view/class/class'
 import Teacher from './view/teacher/teacher'
-import './assets/rem/rem'
-import './assets/css/reset.css'
+import Home from "./view/home/home.js"
+import Login from './view/login/login.js'
 function App() {
   return (
-    <div>
-     {/* <Class></Class> */}
-      <Teacher></Teacher>
+    <div className="App">
+      {/* <Login></Login> */}
+      <Home></Home>
     </div>
   );
 }
