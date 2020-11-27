@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './assets/css/reset.css'
-import './assets/rem/rem.js'
+import "./component/win-SP"
 ReactDOM.render(
   <React.StrictMode>
     <App />
