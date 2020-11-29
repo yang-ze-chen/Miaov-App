@@ -1,14 +1,31 @@
 import React,{useState} from "react"
-import Home from "./view/home/home.js"
-import Login from './view/login/login.js'
+// import Class from './view/class/class'
+// import Teacher from './view/teacher/teacher'
+// import Home from "./view/home/home.js"
+// import Login from './view/login/login.js'
 import Hometop from './view/home-top/h-top'
 import {Route,Switch,Redirect} from 'react-router-dom'
+
+import {router} from './router/router'
 function App() {
-  let [txt, setTxt] = useState(true)
   return (
     <div className="App">
-      {/* <Switch> */}
-      <Hometop txt={txt} setTxt={setTxt}></Hometop>
+      <Hometop />
+      <Switch>
+            {
+              router.map((item,index)=>{
+                return(
+                  <Route
+                    key={index}
+                    path={item.path}
+                    render={item.render}
+                    exact={item.exact}
+                  ></Route>
+                )
+              })
+            }
+          </Switch>
+      {/* <Switch>
       <Route path='/' exact render={()=>{
             return <Redirect to='/home' ></Redirect>
           }} />
@@ -18,11 +35,13 @@ function App() {
       <Route path='/login' exact render={(props)=>{
         return <Login {...props}></Login>
       }} />
-      {/* <Route path='/hometop' exact render={(props)=>{
-        return <Hometop {...props} txt={txt} setTxt={setTxt}></Hometop>
-      }} /> */}
-        
-      {/* </Switch> */}
+      <Route path='/teacher' exact render={(props)=>{
+        return <Teacher {...props}></Teacher>
+      }} />
+      <Route path='/class' exact render={(props)=>{
+        return <Class {...props}></Class>
+      }} />
+      </Switch> */}
       
     </div>
   );

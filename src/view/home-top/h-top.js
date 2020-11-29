@@ -18,10 +18,13 @@ function Htop(props) {
                 <h1 className="logo">miaov.com</h1>
                 <NavLink to='/login' className="user"></NavLink>
             </header>
+
             {!txt?(<nav className="menus">
                 <a className="iconfont icon-home active">首页</a>
-                <a className="iconfont icon-kecheng">课程安排</a>
-                <a className="iconfont icon-peixunjiangshi">讲师团队</a>
+                <NavLink to='/class' className="iconfont icon-kecheng">课程安排</NavLink>
+                {/* <a className="iconfont icon-kecheng">课程安排</a> */}
+                <NavLink to='/teacher' className="iconfont icon-peixunjiangshi">讲师团队</NavLink>
+                {/* <a className="iconfont icon-peixunjiangshi">讲师团队</a> */}
             </nav>):""}
             
         </Fragment>

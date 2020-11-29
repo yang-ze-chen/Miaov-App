@@ -9,11 +9,11 @@ import Img3 from '../../assets/images/banner3.jpg'
 import Img4 from '../../assets/images/banner4.jpg'
 import Content from "../content/content"
 import List from "../list/list"
-import getData from '../../http'
+import {getHome} from '../../http'
 function Home(props) {
   // console.log(props)
-  let {txt}=props
-  console.log(txt)
+  // let {txt}=props
+  // console.log(txt)
   const items = [{
     image: Img,
   }, {
@@ -30,18 +30,18 @@ function Home(props) {
     autoplayDisableOnInteraction: false
   };
 
-  // let [txt, setTxt] = useState(true)
+  let [txt, setTxt] = useState(true)
   // console.log(0,txt)
-  useEffect(()=>{
-      getData(1,10).then((res)=>{
-        console.log(11111)
-        console.log(res)
-      })
-  })
+  // useEffect(()=>{
+  //   getHome(1,1).then((res)=>{
+  //       console.log(11111)
+  //       console.log(res)
+  //     })
+  // })
   return (
     <Fragment>
       {/* 头部区域 */}
-      {/* <Htop txt={txt} setTxt={setTxt}></Htop> */}
+      <Htop txt={txt} setTxt={setTxt}></Htop>
       <div id="main">
         <div className={"pageWrap " + (txt ? "unpagewrfrom" : "pagewrfrom")}>
           {/* 轮播区域 */}
