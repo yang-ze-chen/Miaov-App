@@ -1,0 +1,175 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    color: #000;
+}
+.header {
+    height: 1rem;
+    background: #323436;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.con{
+    background: #3189ce url(../../assets/images/class_bg.jpg) no-repeat 0 0 / 100% 100%;
+    overflow: hidden;
+    padding: 0 0.26666667rem;
+    height: 100%;
+    margin-top: 0.9rem;
+}
+.con h2{
+    width:3rem;
+    height: 0.7rem;
+    background: url(../../assets/images/class_week.png) no-repeat 0 0 / 100% 100%;
+    margin: 0.66666667rem auto 0.82666667rem;
+}
+.timetable {
+    width: 100%;
+    color: #3a3a3a;
+    font: 0.28rem "宋体";
+}
+.center {
+    text-align: center;
+}
+.content_td {
+    text-indent: 0.76rem;
+}
+.timetable thead {
+    background: rgba(206, 115, 175, 0.5);
+    color: #fff;
+    font: 0.32rem fzlt;
+}
+.timetable thead th:nth-of-type(1) {
+    width: 1.85333333rem;
+}
+.timetable thead th {
+    height: 0.69333333rem;
+}
+.timetable tbody {
+    background: #fff;
+}
+.timetable td[rowspan="2"] {
+    height: 1rem;
+    text-align: center;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.timetable td {
+    border: 2px solid #ce73af;
+}
+.timetable .single td:nth-of-type(1) {
+    height: 0.88rem;
+    text-indent: -999px;
+    overflow: hidden;
+}
+.week1 {
+    background: #faf1f7 url(../../assets/images/week1.png) no-repeat center / 0.94666667rem 0.37333333rem;
+}
+.week2 {
+    background: #faf1f7 url(../../assets/images/week2.png) no-repeat center / 0.94666667rem 0.37333333rem;
+}
+.week3 {
+    background: #faf1f7 url(../../assets/images/week3.png) no-repeat center / 0.94666667rem 0.37333333rem;
+}
+.week4 {
+    background: #faf1f7 url(../../assets/images/week4.png) no-repeat center / 0.94666667rem 0.37333333rem;
+}
+.week5 {
+    background: #faf1f7 url(../../assets/images/week5.png) no-repeat center / 0.94666667rem 0.37333333rem;
+}
+.week6 {
+    background: #faf1f7 url(../../assets/images/week6.png) no-repeat center / 0.94666667rem 0.37333333rem;
+}
+.more_message {
+    text-align: center;
+    padding-top: 0.09333333rem;
+    font-size: 0.28rem;
+    color: #fff;
+}
+.more_message a {
+    width: 3.86666667rem;
+    background: #fff;
+    color: #2f88cd;
+    line-height: 0.45rem;
+    border-radius: 0.4rem;
+    vertical-align: top;
+    margin-top: 0.36rem;
+    text-decoration: none;
+}
+
+.foot {
+    background: #323436;
+    padding-top: 0.06666667rem;
+}
+.phone {
+    width: 100%;
+    font: 0.32rem / 1.10666667rem fzlt;
+    
+    display: flex;
+    
+}
+.phone a {
+    color: #fff;
+
+
+}
+.phone a:nth-of-type(1) {
+    padding: 0 0.26666667rem;
+    font-size: 0.3rem;
+    float: left;
+    /* padding-right: 0.42666667rem; */
+}
+.phone a:nth-of-type(2) {
+
+
+    float: left;
+    font-size: 0.3rem;
+}
+.phone a:nth-of-type(1)::before {
+    content: '';
+    width: 0.4rem;
+    height: 0.3rem;
+    display: inline-block;
+    vertical-align: top;
+    background: url(../../assets/images/teacher_email.png) no-repeat 0 0 / 100% 100%;
+    margin: 0.4rem 0.1rem 0 0 ;
+}
+.phone a:nth-of-type(2)::before {
+    content: '';
+    width: 0.32666667rem;
+    height: 0.35333333rem;
+    display: inline-block;
+    background: url(../../assets/images/teacher_phone.png) no-repeat 0 0 / 100% 100%;
+    vertical-align: top;
+    margin: 0.4rem 0.1rem 0 0 ;
+}
+.foot_tit{
+    padding: 0 0.26666667rem 0.34666667rem;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.foot_tit a {
+    float: left;
+    width: 1.7rem;
+    font: 0.2rem / 0.32666667rem "微软雅黑";
+    margin-top: 0.05rem;
+    color: #adaeae;
+    text-align: center;
+    border-right: 1px solid #adaeae;
+}
+.copyright {
+    text-align: center;
+    font: 0.2rem / 0.60666667rem "微软雅黑";
+    color: #868b8d;
+    height: 0.6666667rem;
+    background: #2d2f30;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

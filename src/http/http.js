@@ -3,10 +3,10 @@
 // const http = Axios.create({
 //     baseURL:'https://data.miaov.com/'
 // })
-// function getData(page,rows){
+// function getHome(page,rows){
 //     return http.post(`lecturer/lists?page=${page}&rows=${rows}`)
 // }
-// export default getData;
+// export  {getHome};
 
 import ajax from './ajax'
 const BASE = 'https://data.miaov.com'
@@ -36,6 +36,7 @@ export const Logout=()=>{
 export const getHome=(order,sort,category_id,recommend)=>{
   return ajax(BASE + '/lecturer/lists?page=1&rows=20',{order,sort,category_id,recommend},'POST')
 }
+
 
 //讲师
 export const getTeacher=(order,sort,category_id,recommend)=>{
