@@ -1,12 +1,12 @@
 import React from 'react'
+import Htop from "../home-top/h-top"
 import './class.css'
-
 function Class() {
   return (
+    // 学习课程
     <div >
-      <div className="header">11</div>
+      <Htop></Htop>
       <div className="con">
-
         <h2><span></span></h2>
         <table className="timetable">
           <thead>

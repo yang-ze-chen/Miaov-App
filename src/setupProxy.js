@@ -1,7 +1,7 @@
-const proxy = require("http-proxy-middleware");
+const {createProxyMiddleware} = require("http-proxy-middleware");
 
 module.exports = function(app){
-    app.use("/miaov",proxy({
+    app.use("/miaov",createProxyMiddleware({
         "target":"https://data.miaov.com/",
         "secure": true,
         "changeOrigin": true,

@@ -1,6 +1,6 @@
-import React, { Fragment, useState } from "react"
+import React, { Fragment, useState,useEffect } from "react"
 import "../../assets/css/reset.css"
-import "./index.css"
+import "./home.css"
 import ReactSwiper from 'reactjs-swiper';
 import Htop from "../home-top/h-top"
 import Img from '../../assets/images/banner1.jpg'
@@ -9,7 +9,18 @@ import Img3 from '../../assets/images/banner3.jpg'
 import Img4 from '../../assets/images/banner4.jpg'
 import Content from "../content/content"
 import List from "../list/list"
+//接口
+import {getHome} from "../../api/index"
 function Home() {
+  //接口数据
+  let [list,setList] = useState([]);
+  useEffect(async() => {
+    const {data} = await getHome("desc","sort","1","1");
+    console.log(data)
+    setList(data);
+    // console.log(list)
+  }, [])
+  console.log(list);
   const items = [{
     image: Img,
   }, {
@@ -25,15 +36,13 @@ function Home() {
     autoplay: 4000,
     autoplayDisableOnInteraction: false
   };
-
-  let [txt, setTxt] = useState(true)
-  console.log('00', txt)
   return (
+    // 首页区域
     <Fragment>
       {/* 头部区域 */}
-      <Htop txt={txt} setTxt={setTxt}></Htop>
+      <Htop></Htop>
       <div id="main">
-        <div className={"pageWrap " + (txt ? "unpagewrfrom" : "pagewrfrom")}>
+        <div className="pageWrap">
           {/* 轮播区域 */}
           <div className="banner">
             <div className="banner-img">
@@ -64,7 +73,7 @@ function Home() {
                   </li>
               </ul>
             </div>
-            <List></List>
+            <List list={list}></List>
           </div>
         </div>
       </div>
