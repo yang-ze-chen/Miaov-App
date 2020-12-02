@@ -136,6 +136,7 @@ function Login(props) {
                                 <p className="login_txt">
                                     没有账号? <a onClick={() => {
                                         setLoginShow(false)
+                                        setUsername('')
                                     }}>立即注册</a>
                                 </p>
                             </div>
@@ -207,6 +208,7 @@ function Login(props) {
                                     已有账号? <a
                                         onClick={() => {
                                             setLoginShow(true)
+                                            setUsername('')
                                         }}>立即登录</a>
                                 </p>
                             </div>

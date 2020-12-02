@@ -6,7 +6,7 @@ import Good from "./good"
 function Procenpl(props) {
     let [comment, setComment] = useState([]);
     useEffect(async () => {
-        const { data } = await getComment(props.id);
+        const { data } = await getComment(props.id,'哈哈哈哈哈');
         setComment(data);
     }, [])
     // console.log(comment)

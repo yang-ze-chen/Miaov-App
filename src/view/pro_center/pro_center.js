@@ -8,6 +8,7 @@ import Footer from "../../component/pro_cent/addcomment"
 
 function Procenter(props) {
     let id = props.match.params.id
+    // console.log('88',id)
     return (
         // 详情
         <Fragment>
