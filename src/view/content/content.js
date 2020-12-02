@@ -23,7 +23,7 @@ function Content() {
                         VIP自学阵营
                     <span>A联盟-HTML&CSS</span>
                     </h3>
-                    <p className="price">FREE</p>
+                    <p className="price">￥4800</p>
                     <div className="txt">
                         <time>2个月</time>
                         <p>PC端静态页面，移动商静 态页面制作...</p>

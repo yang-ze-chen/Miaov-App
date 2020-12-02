@@ -4,6 +4,7 @@ import Home from "../view/home/home.js"
 import Login from '../view/login/login.js'
 import Class from '../view/class/class'
 import Teacher from '../view/teacher/teacher'
+import Procenter from '../view/pro_center/pro_center'
 const router=[
     {
         path:"/",
@@ -38,6 +39,13 @@ const router=[
         exact:true,
         render:(props)=>{
             return <Teacher {...props}></Teacher>
+        }
+    },
+    {
+        path:"/work/:id",
+        exact:true,
+        render:(props)=>{
+            return <Procenter {...props}></Procenter>
         }
     }
 ]

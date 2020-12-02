@@ -45,10 +45,12 @@ function Htop(props) {
     let { user, changeShow } = props;
     let [isBtnShow, setBtnShow] = useState(false);
     useEffect(() => {
-        props.dispatch(isLogin());
+      props.dispatch(isLogin()).then((data)=>{
+        console.log(data)
+      })
     }, []);
-
     return (
+        // 首页头部
         <Fragment>
             <header id="header">
                 <nav className="menu">
@@ -76,6 +78,7 @@ function Htop(props) {
             {/* <header id="header">
                 <nav className='menu'>
                     <a className="menu-a icon-size" onTouchEnd={() => {
+
                         setTxt(!txt)
                     }}></a>
                 </nav>
