@@ -1,0 +1,228 @@
+body {
+    font-family: Helvetica;
+    margin: 0;
+    color: #000;
+}
+.header {
+    height: 1rem;
+    background: #323436;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.teacher_banner {
+    height: 5.45rem;
+    background: url(../../assets/images/teacher_bg.jpg) no-repeat 0px 0px / 100% 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0.9rem;
+}
+.teacher_banner h2{
+    width:2rem;
+    height:0.8rem;
+    background: url(../../assets/images/teachr_title.png) no-repeat 0 0 / 100% 100%;
+    margin: 0.3rem auto 0.82666667rem;
+}
+/* .swiper-img{
+    width:2rem;
+    height: 2rem;
+} */
+.teacher_index {
+    background: #f4fbfe;
+    padding: 0 0.26666667rem;
+}
+.teacher_index h2 {
+    font: 0.4rem / 1rem fzlt;
+    padding-top: 2px;
+    text-align: center;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+.teacher_list {
+    margin-top: 1px;
+}
+.teacher_list li.active{
+    background: url('../../assets/images/teacher_new.png') no-repeat 0px 0px / 100% 100%;
+}
+.activep{
+    height: 0.2rem;
+    text-align: center;
+    line-height: 0.2rem;
+    width: 0.5rem;
+    float: left;
+    border: 1px solid white;
+    border-radius: 25%;
+    color: white;
+    display: block;
+    margin: 0.2rem 0 0 1.5rem;
+    font-size: 0.15rem;
+}
+.pppp{
+    display: none;
+}
+.teacher_list li {
+    width: 3.48rem;
+    height: 3.49rem;
+    float: left;
+    border: 1px solid #dce7eb;
+    box-sizing: border-box;
+    margin-top: -1px;
+    background-color: white;
+    position: relative;
+    background-clip: border-box;
+    background-origin: border-box;
+}
+.teacher_list li:nth-of-type(even) {
+    margin-left: -1px;
+}
+.teacher_list li:nth-of-type(even) {
+    margin-left: -1px;
+}
+
+.teacher_list li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/images/list1.png) no-repeat 0px 0px / 100% 100%;
+}
+.teacher_list li:nth-of-type(2)::before{
+    background-image: url(../../assets/images/list2.png);
+}
+.teacher_list li:nth-of-type(3)::before{
+    background-image: url(../../assets/images/list3.png);
+}
+.teacher_list li:nth-of-type(4)::before{
+    background-image: url(../../assets/images/list4.png);
+}
+.message_li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.message_li h3 {
+    font: 0.4rem /0.5rem "宋体";
+    color: #e15671;
+    padding-top: 0.5rem;
+}
+
+.message_li p {
+    font: 0.25rem / 0.5rem "宋体";
+    color: #666666;
+}
+.welcome {
+    margin: 0.26666667rem 0;
+    padding-bottom: 0.4rem;
+    background: linear-gradient(90deg, #4d94e2 0%, #4dc4e2 100%);
+    box-shadow: 0px 0px 10px #4da8e2;
+}
+.welcome .welcome_photo {
+    width: 1.5rem;
+    height: 1.5rem;
+    float: left;
+    border-radius: 50%;
+    border: 0.04rem solid #ffffff;
+    background: #a1d97b;
+    background: url(../../assets/images/xiaole.png) no-repeat 0px 0px / 100% 100% #a1d97b;
+    margin: 0.62666667rem 0 0 0.3rem;
+}
+.welcome .welcome_photo img {
+    width: 100%;
+    height: 100%;
+}
+.welcome p {
+    width: 4.5rem;
+    float: right;
+    font: 0.28rem / 0.3333333rem "宋体";
+    color: #fff;
+    padding-right: 0.44rem;
+    padding-top: 0.38666667rem;
+}
+.welcome p span {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 0.56rem;
+}
+.foot {
+    background: #323436;
+    padding-top: 0.06666667rem;
+}
+.phone {
+    width: 100%;
+    font: 0.32rem / 1.10666667rem fzlt;
+    
+    display: flex;
+    
+}
+.phone a {
+    color: #fff;
+
+
+}
+.phone a:nth-of-type(1) {
+    padding: 0 0.26666667rem;
+    font-size: 0.3rem;
+    float: left;
+    /* padding-right: 0.42666667rem; */
+}
+.phone a:nth-of-type(2) {
+
+
+    float: left;
+    font-size: 0.3rem;
+}
+.phone a:nth-of-type(1)::before {
+    content: '';
+    width: 0.4rem;
+    height: 0.3rem;
+    display: inline-block;
+    vertical-align: top;
+    background: url(../../assets/images/teacher_email.png) no-repeat 0 0 / 100% 100%;
+    margin: 0.4rem 0.1rem 0 0 ;
+}
+.phone a:nth-of-type(2)::before {
+    content: '';
+    width: 0.32666667rem;
+    height: 0.35333333rem;
+    display: inline-block;
+    background: url(../../assets/images/teacher_phone.png) no-repeat 0 0 / 100% 100%;
+    vertical-align: top;
+    margin: 0.4rem 0.1rem 0 0 ;
+}
+.foot_tit{
+    padding: 0 0.26666667rem 0.34666667rem;
+}
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.foot_tit a {
+    float: left;
+    width: 1.7rem;
+    font: 0.2rem / 0.32666667rem "微软雅黑";
+    margin-top: 0.05rem;
+    color: #adaeae;
+    text-align: center;
+    border-right: 1px solid #adaeae;
+}
+.copyright {
+    text-align: center;
+    font: 0.2rem / 0.60666667rem "微软雅黑";
+    color: #868b8d;
+    height: 0.6666667rem;
+    background: #2d2f30;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,169 @@
+ .content_list {
+     padding: 0 0.1rem;
+ }
+
+ .content_list li {
+     width: 3.35rem;
+     height: 6.38rem;
+     background: url("../../assets/images/list1_bg.jpg") no-repeat;
+     background-size: 100%;
+     margin: 0 0.13333333rem 0.26666667rem;
+     float: left;
+     box-shadow: 0 0 2px #e1ecf1;
+     position: relative;
+ }
+
+ .content_list li:nth-of-type(2) {
+     background-image: url("../../assets/images/list2_bg.jpg");
+ }
+
+ .content_list li:nth-of-type(2) .price {
+     color: #4d9be2;
+ }
+
+ .content_list li:nth-of-type(3) {
+     background-image: url(../../assets/images/list3_bg.jpg);
+ }
+
+ .content_list li:nth-of-type(3) .price {
+     color: #f97f32;
+ }
+
+ .content_list li:nth-of-type(4) {
+     background-image: url(../../assets/images/list4_bg.jpg);
+ }
+
+ .content_list li:nth-of-type(4) .price {
+     color: #6ece51;
+ }
+
+ .pop_li .popular {
+     width: 1.7rem;
+     height: 0.4rem;
+     border: 0.02666667rem solid rgba(255, 255, 255, 0.2);
+     border-radius: 0.21333333rem;
+     margin: 0.4rem auto 0;
+     font: 0.22rem / 0.3333333rem fzlt;
+     color: #fff;
+     text-align: center;
+     display: block;
+ }
+
+ .pop_li .list_title {
+     display: block;
+     text-align: center;
+     padding-top: 0.1rem;
+     color: #fff;
+     font: bold 0.3rem / 0.58666667rem fzlt;
+ }
+
+ .pop_li .list_title span {
+     display: block;
+     font: 0.12rem / 0.1rem fzlt;
+ }
+
+ .pop_li .txt {
+     margin-top: 0.59rem;
+     width: 2.89rem;
+     padding-left: 0.26rem;
+     font: 0.1rem / 0.3rem fzlt;
+     word-break: break-all;
+ }
+
+ .signUp {
+     width: 2rem;
+     height: 0.6rem;
+     background: url('../../assets/images/btn_bg.png') no-repeat;
+     background-size: 100% 100%;
+     border: none;
+     font: 0.34rem / 0.6rem pingfang;
+     color: #fff;
+     padding: 0rem 0.07rem 0.12rem 0rem;
+     box-sizing: content-box;
+     position: absolute;
+     left: 0.6rem;
+     bottom: 0.3rem;
+     text-align: center;
+ }
+
+ .price {
+     color: #f18cc4;
+     margin: 0.17333333rem auto 0;
+     border-radius: 50%;
+     width: 1.59rem;
+     height: 1.59rem;
+     background: #fdf4f9;
+     text-align: center;
+     font: 0.4rem / 1.6rem pingfang;
+ }
+
+ .month_li .list_title {
+     font: 0.3rem / 0.46rem fzlt;
+     padding-top: 0.48rem;
+     color: #fff;
+     text-align: center;
+ }
+
+ .month_li .price {
+     margin-top: 0.38666667rem;
+ }
+
+ .month_li .txt {
+     padding: 0.46rem 0.4rem 0;
+ }
+
+ .month_li .txt time {
+     font: 0.4rem / 0.5rem pingfang;
+     text-align: center;
+     display: block;
+ }
+
+ .month_li .txt p {
+     font: 0.24rem / 0.38rem fzlt;
+ }
+
+ .register_vip {
+     text-align: center;
+     padding: 0.03rem 0.1rem 0.31rem;
+ }
+
+ .register_vip h3 {
+     font: 0.44rem / 0.84rem fzlt;
+ }
+
+ .register_vip .register_txt {
+     font: 0.24rem / 0.44rem fzlt;
+     color: #666666;
+ }
+
+ .register_vip strong {
+     font: 0.39rem / 0.8rem fzlt;
+     display: block;
+     color: #e15671;
+ }
+
+ .register_vip button {
+     width: 3rem;
+     height: 0.7rem;
+     padding: 0 0.1rem 0.12rem 0;
+     background: url('../../assets/images/once.png') no-repeat;
+     background-size: 100% 100%;
+     border: none;
+     box-sizing: content-box;
+     font: 0.37rem / 0.83rem pingfang;
+     color: #fff;
+ }
+
+ .register_vip a {
+     margin: 0 auto;
+     display: block;
+     width: 3rem;
+     height: 0.8rem;
+     padding: 0 0.1rem 0.12rem 0;
+     background: url('../../assets/images/btn_bg.png') no-repeat;
+     background-size: 100% auto;
+     border: none;
+     box-sizing: content-box;
+     font: 0.37rem / 0.83rem pingfang;
+     color: #fff;
+ }
