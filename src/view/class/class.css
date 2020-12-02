@@ -99,45 +99,51 @@ body {
     text-decoration: none;
 }
 
-/* .footer {
+.foot {
     background: #323436;
     padding-top: 0.06666667rem;
 }
-.link {
+.phone {
+    width: 100%;
     font: 0.32rem / 1.10666667rem fzlt;
-    padding: 0 0.26666667rem;
+    
+    display: flex;
+    
 }
-.link a {
+.phone a {
     color: #fff;
+
 }
-.link a:nth-of-type(1) {
-    font-size: 0.2rem;
+.phone a:nth-of-type(1) {
+    padding: 0 0.26666667rem;
+    font-size: 0.3rem;
     float: left;
-    padding-right: 0.42666667rem;
+    /* padding-right: 0.42666667rem; */
 }
-.link a:nth-of-type(2) {
-  
-    font-size: 0.2rem;
+.phone a:nth-of-type(2) {
+
+    float: left;
+    font-size: 0.3rem;
 }
-.link a:nth-of-type(1)::before {
+.phone a:nth-of-type(1)::before {
     content: '';
     width: 0.4rem;
     height: 0.3rem;
     display: inline-block;
     vertical-align: top;
     background: url(../../assets/images/teacher_email.png) no-repeat 0 0 / 100% 100%;
-    margin: 0.37333333rem 0.30666667rem 0 0.38666667rem;
+    margin: 0.4rem 0.1rem 0 0 ;
 }
-.link a:nth-of-type(2)::before {
+.phone a:nth-of-type(2)::before {
     content: '';
     width: 0.32666667rem;
     height: 0.35333333rem;
     display: inline-block;
     background: url(../../assets/images/teacher_phone.png) no-repeat 0 0 / 100% 100%;
     vertical-align: top;
-    margin: 0.33333333rem 0.21333333rem 0 0.58666667rem;
+    margin: 0.4rem 0.1rem 0 0 ;
 }
-.foot_nav {
+.foot_tit{
     padding: 0 0.26666667rem 0.34666667rem;
 }
 .clearfix:after {
@@ -145,9 +151,9 @@ body {
     display: block;
     clear: both;
 }
-.foot_nav a {
+.foot_tit a {
     float: left;
-    width: 1.72rem;
+    width: 1.7rem;
     font: 0.2rem / 0.32666667rem "微软雅黑";
     margin-top: 0.05rem;
     color: #adaeae;
@@ -163,4 +169,4 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-} */
+}

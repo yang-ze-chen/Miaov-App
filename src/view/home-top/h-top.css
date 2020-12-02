@@ -67,19 +67,15 @@
     height: 100vh;
     background: url("../../assets/images//menu.png") no-repeat;
     background-size: cover;
-    z-index: 1;
-    /* transition: .5s transform; */
+    z-index: 998;
+    transition: .5s transform;
 }
-/* .show{ */
-    /* display: block; */
-    /* transform: translateX(3rem); */
-    /* transition: .5s transform; */
-/* } */
-/* .unshow{ */
-    /* display: none; */
-    /* transform: translateX(-3rem); */
-    /* transition: .5s transform; */
-/* } */
+.show{
+    transform: translateX(0rem);
+}
+.unshow{
+    transform: translateX(-3.5rem);
+}
 
 .menus a {
     display: block;

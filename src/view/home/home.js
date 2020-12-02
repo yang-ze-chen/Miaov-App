@@ -25,15 +25,12 @@ function Home() {
     autoplay: 4000,
     autoplayDisableOnInteraction: false
   };
-
-  let [txt, setTxt] = useState(true)
-  console.log('00', txt)
   return (
     <Fragment>
       {/* 头部区域 */}
-      <Htop txt={txt} setTxt={setTxt}></Htop>
+      <Htop></Htop>
       <div id="main">
-        <div className={"pageWrap " + (txt ? "unpagewrfrom" : "pagewrfrom")}>
+        <div className="pageWrap">
           {/* 轮播区域 */}
           <div className="banner">
             <div className="banner-img">
