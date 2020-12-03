@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react'
-import { getTeacher } from '../../http/http'
+import { getTeacher } from '../../api/index'
 
 
 

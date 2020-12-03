@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './teacher.css'
-import { getTeacher } from '../../http/http'
+import { getTeacher } from '../../api/index'
 import Swiperd from './swiper'
 import Htop from '../home-top/h-top'
 function Teacher() {

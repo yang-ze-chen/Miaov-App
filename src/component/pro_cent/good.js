@@ -20,10 +20,12 @@
 // }
 // export default Gooder
 
+
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { getGood, setGood, cancelGood } from "../../store/action/good";
 import { withRouter } from "react-router-dom";
+
 
 function Good(props) {
     console.log('110',props)
