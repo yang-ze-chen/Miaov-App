@@ -4,21 +4,21 @@ import { getComment } from "../../api/index"
 import image from '../../assets/images/comment_photo.png';
 import Good from "./good"
 function Procenpl(props) {
+    let {id} =props
     let [comment, setComment] = useState([]);
     useEffect(async () => {
-        const { data } = await getComment(props.id);
+        const { data } = await getComment(id);
         setComment(data);
     }, [])
-    // console.log(comment)
     return (
         <Fragment>
             <div className="miiaov_comment">
-                <Good id={props}></Good>
+                <Good props={props}></Good>
                 <ul className="comment_list" >
                     {
                         comment.map((item, index) => {
                             return (
-                                <li key={item.id}>
+                                <li key={item.create_time}>
                                     <div className="user_comment clearfix">
                                         <img src={image} />
                                         <span>{item.username}</span>
@@ -32,7 +32,6 @@ function Procenpl(props) {
                                 </li>
                             )
                         })
-
                     }
                 </ul>
             </div>

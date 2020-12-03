@@ -1,32 +1,32 @@
-import React, { Fragment, useState } from 'react';
-import { addComment } from "../../api/index"
-
+import React, { Fragment, useState ,useEffect} from 'react';
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+import Post from "./post"
 function Procenter(props) {
-    // console.log(props)
     let [foot, setFoot] = useState(true)
-    // console.log(foot)
+    //文本域
+    let {user,id}=props
     return (
         // 详情
         <Fragment>
             <footer
-
                 className={"miiapv_footer " + (foot ? "foot" : "unfoot")}
             >
                 <span onTouchEnd={() => {
-                    setFoot(!foot)
+                    let user= props.user
+                    if (user=='') {
+                        alert("请登录")
+                    }else{
+                        setFoot(!foot)
+                    }
+                    
                 }}>回复本帖</span>
 
             </footer>
-            <div
-
-                className={"miiapv_footer_er " + (foot ? "unfoot" : "foot")}>
-                <textarea></textarea>
-                <span onTouchEnd={() => {
-                    setFoot(!foot)
-                }}>发表本贴</span>
-            </div>
-
+            <Post props={props} foot={foot} setFoot={setFoot}></Post>
         </Fragment>
     )
 }
-export default Procenter
+export default connect((state) => {
+    return { user: state.login };
+})(withRouter(Procenter))   

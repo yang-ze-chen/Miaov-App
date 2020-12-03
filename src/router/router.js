@@ -49,4 +49,25 @@ const router=[
         }
     }
 ]
-export {router}
+const nav = [
+    {
+      name: "首页",
+      to: "/",
+      exact: true,
+      className: "iconfont icon-home",
+    },
+    {
+      name: "课程安排",
+      to: "/course",
+      exact: true,
+      className: "iconfont icon-kecheng",
+    },
+    {
+      name: "讲师团队",
+      to: "/lecturer",
+      exact: true,
+      className: "iconfont icon-peixunjiangshi",
+    },
+  ];
+  
+  export  {router,nav};
