@@ -8,7 +8,6 @@ import { connect } from "react-redux"
 import { useBack } from "../../assets/hooks/index"
 import Htop from "../home-top/h-top"
 function Login(props) {
-    // console.log(props.location)
 
     let [loginShow, setLoginShow] = useState(true)
 

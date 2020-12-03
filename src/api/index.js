@@ -1,5 +1,5 @@
 import ajax from './ajax'
-const BASE = 'https://data.miaov.com'
+const BASE = ''
 //判断是否登录
 export const isLogin=()=>{
   return ajax(BASE + '/user/islogin','POST')

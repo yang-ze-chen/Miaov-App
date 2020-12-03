@@ -65,7 +65,7 @@
 
 .works_list .wrork_txt strong {
     float: left;
-    width: 1.65rem;
+    width: 1.6rem;
     height: 0.55rem;
     font: 0.2rem / 0.28rem fzlt;
     text-indent: 0.22666667rem;
@@ -77,7 +77,7 @@
 .works_list .wrork_txt span {
     float: right;
     font: 0.16rem / 0.69333333rem fzlt;
-    margin-top: -0.3rem;
+    margin-top: -0.2rem;
 }
 
 .works_list .wrork_txt span em {

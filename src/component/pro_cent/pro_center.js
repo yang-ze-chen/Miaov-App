@@ -2,13 +2,12 @@ import React, { useState, useEffect, Fragment } from 'react';
 import ReactSwiper from 'reactjs-swiper';
 import { getInfo } from "../../api/index"
 function Procent(props) {
-    console.log(props)
+    let {id}=props
     let [info, setInfo] = useState({});
     useEffect(async () => {
-        const { data } = await getInfo(props.id);
+        const { data } = await getInfo(id);
         setInfo(data);
     }, [])
-    // console.log(info)
     const swiperOptions = {
         preloadImages: true,
         autoplay: 4000,
