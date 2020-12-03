@@ -17,6 +17,7 @@ body {
     background: url(../../assets/images/teacher_bg.jpg) no-repeat 0px 0px / 100% 100%;
     overflow: hidden;
     position: relative;
+    margin-top: 0.9rem;
 }
 .teacher_banner h2{
     width:2rem;
@@ -25,10 +26,10 @@ body {
     background: url(../../assets/images/teachr_title.png) no-repeat 0 0 / 100% 100%;
     margin: 0.3rem auto 0.82666667rem;
 }
-.swiper-img{
+/* .swiper-img{
     width:2rem;
     height: 2rem;
-}
+} */
 .teacher_index {
     background: #f4fbfe;
     padding: 0 0.26666667rem;

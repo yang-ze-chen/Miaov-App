@@ -2,10 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './teacher.css'
 import { getTeacher } from '../../http/http'
 import Swiperd from './swiper'
-// import './swiper.min.css'
-// import Swiper from './swiper.min.js'
-
-// import Teacherxq from './teacherxq'
+import Htop from '../home-top/h-top'
 function Teacher() {
     let [data, setdata] = useState([])
     useEffect(async () => {
@@ -26,7 +23,7 @@ function Teacher() {
 
     return (
         <div>
-            <div className="header">11</div>
+            <Htop></Htop>
             <div className="teacher_banner">
                 <h2><span></span></h2>
                 <Swiperd data={data}></Swiperd>

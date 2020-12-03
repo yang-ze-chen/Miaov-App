@@ -17,6 +17,7 @@ body {
     overflow: hidden;
     padding: 0 0.26666667rem;
     height: 100%;
+    margin-top: 0.9rem;
 }
 .con h2{
     width:3rem;
