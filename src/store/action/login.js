@@ -12,6 +12,7 @@ export default function login(data) {
                 dispatch({
                     type:"LOGIN",
                     user:data.username
+
                 })
             }
             return res.data

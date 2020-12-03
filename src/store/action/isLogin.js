@@ -10,6 +10,7 @@ export default function isLogin(data) {
                     user:res.data.username
                 })
             }
+            return res.data
         })
     }
 }
