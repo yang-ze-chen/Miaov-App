@@ -5,12 +5,12 @@ import Htop from "../home-top/h-top"
 import Procenpl from "../../component/pro_cent/pro_cenpl"
 import Procent from "../../component/pro_cent/pro_center"
 import Footer from "../../component/pro_cent/addcomment"
-import { connect } from "react-redux";
+import { connect } from "react-redux"
 import { withRouter } from "react-router-dom";
 import { getInfo } from "../../api/index"
 function Procenter(props) {
     let id = props.match.params.id
-    // console.log(props)
+    // console.log('88',id)
     let [info, setInfo] = useState({});
     useEffect(async () => {
         const { data } = await getInfo(id);
@@ -21,10 +21,10 @@ function Procenter(props) {
         <Fragment>
             <div id="main">
                 <Htop></Htop>
-                <Procent props={props} id={props.match.params.id}></Procent>
-                <Footer props={props} id={props.match.params.id}></Footer>
+                <Procent id={id} info={info}></Procent>
+                <Footer id={id} ></Footer>
                 {/* 评论 */}
-                <Procenpl props={props} goodNum={info.good} id={props.match.params.id}></Procenpl>
+                <Procenpl id={id} goodNum={info.good}></Procenpl>
             </div>
 
         </Fragment >

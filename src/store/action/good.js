@@ -5,7 +5,7 @@ function getGood(id) {
     return HTTP.post("/lecturer/getgood", {
       article_id: id,
     }).then((res) => {
-      // console.log("是否点赞数据", res);
+      console.log("是否点赞数据", res);
       if (res.data.code == 0) {
         dispatch({
           type: "GOOD",
@@ -25,7 +25,7 @@ function setGood(id) {
     return HTTP.post("/lecturer/good", {
       article_id: id,
     }).then((res) => {
-      // console.log("点赞数据", res);
+      console.log("点赞数据", res);
       if (res.data.code == 0) {
         // 获取 goodid
         dispatch(getGood(id));
