@@ -137,6 +137,9 @@ function Login(props) {
                                     没有账号? <a onClick={() => {
                                         setLoginShow(false)
                                         setUsername('')
+                                        setPassword('')
+                                        setRepassword('')
+                                        setVcode('')
                                     }}>立即注册</a>
                                 </p>
                             </div>
@@ -209,6 +212,9 @@ function Login(props) {
                                         onClick={() => {
                                             setLoginShow(true)
                                             setUsername('')
+                                            setPassword('')
+                                            setRepassword('')
+                                            setVcode('')
                                         }}>立即登录</a>
                                 </p>
                             </div>

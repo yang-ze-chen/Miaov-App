@@ -114,8 +114,8 @@
     width: 1.5rem;
 }
 .header-user{
-    margin-top: -0.6rem;
-    font-size: 0.7rem;
+    margin-top: -0.5rem;
+    font-size: 0.6rem;
     color: rgba(255, 255, 255, .8);
 }
 .header-logout-btn{

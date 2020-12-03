@@ -46,7 +46,8 @@ function Htop(props) {
     let [isBtnShow, setBtnShow] = useState(false);
     useEffect(() => {
       props.dispatch(isLogin()).then((data)=>{
-        console.log(data)
+        // console.log('9999',data)
+
       })
     }, []);
     return (
@@ -97,6 +98,6 @@ function Htop(props) {
 }
 // export default Htop
 export default connect((state) => {
-    console.log('000',state);
+    // console.log('000',state);
     return { user: state.login };
   })(withRouter(Htop))
